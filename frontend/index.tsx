@@ -5,7 +5,6 @@ const formSelector = ".ModalPosition .DialogContent form";
 const headerKeywords = ["game", "custom"];
 
 export default async function PluginMain() {
-  // Millennium.AddWindowCreateHook(onWindowCreated);
   Millennium.AddWindowCreateHook(async (context: any) => {
     if (context.m_strTitle !== "Steam") {
       console.debug("This is not the window you are looking for.");
@@ -34,8 +33,6 @@ export default async function PluginMain() {
         console.warn("Popup was not for launching game with custom args.");
         console.warn(`"${header.innerText}"`);
       }
-      // Surely you can't get the popup more than once every 3 seconds, right?
-      await new Promise((resolve) => setTimeout(resolve, 3000));
     }
   });
 }

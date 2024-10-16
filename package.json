@@ -13,7 +13,7 @@
   },
   "type": "module",
   "name": "@adamraichu/millennium-auto-accept-custom-launch-args",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "description": "A template plugin for millennium",
   "main": "./.millennium/Dist/index.js",
   "author": "AdamRaichu",
