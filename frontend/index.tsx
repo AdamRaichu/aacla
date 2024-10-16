@@ -2,7 +2,6 @@ import { Millennium } from "millennium-lib";
 import { containsAllOf } from "./utils";
 
 const formSelector = ".ModalPosition .DialogContent form";
-//
 const headerKeywords = ["game", "custom"];
 
 export default async function PluginMain() {
