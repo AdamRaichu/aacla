@@ -11,11 +11,6 @@
     "tslib": "^2.8.0",
     "typescript": "^5.6.3"
   },
-  "type": "module",
-  "name": "@adamraichu/millennium-auto-accept-custom-launch-args",
-  "version": "1.1.1",
-  "description": "A template plugin for millennium",
-  "main": "./.millennium/Dist/index.js",
   "author": "AdamRaichu",
   "license": "MIT"
 }
