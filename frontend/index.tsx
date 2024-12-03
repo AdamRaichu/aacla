@@ -7,10 +7,11 @@ declare const LocalizationManager: any;
 
 export default async function PluginMain() {
   Millennium.AddWindowCreateHook(async (context: any) => {
-    if (context.m_strTitle !== LocalizationManager.LocalizeString("#WindowName_SteamDesktop")) {
-      console.debug("This is not the window you are looking for.");
-      return;
-    }
+    // // Stop trying to be smart it's not working.
+    // if (context.m_strTitle !== LocalizationManager.LocalizeString("#WindowName_SteamDesktop")) {
+    //   console.debug("This is not the window you are looking for.");
+    //   return;
+    // }
 
     const doc = context.m_popup.document;
 
