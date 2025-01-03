@@ -15,3 +15,7 @@ Remove unnecessary delay in internal handling.
 ### v1.2.0
 
 Use localized names to identify popups/windows instead of raw strings.
+
+#### v1.2.3
+
+Technical changes, and stop trying to be smart with window titles because it wasn't working.
