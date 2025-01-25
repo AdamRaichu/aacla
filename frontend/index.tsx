@@ -19,7 +19,7 @@ export default async function PluginMain() {
       // Wait for the popup to exist.
       await Millennium.findElement(doc, formSelector);
 
-      const header = (await Millennium.findElement(doc, `${formSelector} .DialogHeader`))[0] as HTMLDivElement;
+      const header = (await Millennium.findElement(doc, `${formSelector} .DialogHeader:not(.adamraichu_not_aacla)`))[0] as HTMLDivElement;
       if (header.innerText.includes(LocalizationManager.LocalizeString("#LaunchApp_ShowGameArgs_Title"))) {
         const confirmButton = (await Millennium.findElement(doc, `${formSelector} button[type='submit']`))[0] as HTMLButtonElement;
         if (confirmButton.innerText.includes(LocalizationManager.LocalizeString("#Button_Continue"))) {
@@ -32,6 +32,7 @@ export default async function PluginMain() {
       } else {
         console.warn("Popup was not for launching game with custom args.");
         console.warn(`"${header.innerText}"`);
+        header.classList.add("adamraichu_not_aacla");
       }
     }
   });
